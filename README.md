@@ -1,4 +1,4 @@
-# SR-FoT
+# SR-FoT (AAAI 2025)
 This is the official implementation of the paper "SR-FoT: A Syllogistic-Reasoning Framework of Thought for Large Language Models Tackling Knowledge-based Reasoning Tasks" (AAAI 2025). 
 
 ## Requirements
