@@ -23,26 +23,29 @@ Download the dataset of ScienceQA, StrategyQA, and BoolQ from their official web
 Cause our SR-FoT is a training-free method, so we only need to do the evaluation to get the experimental results. 
 
 ### Get Answer
-For no matter closed-source and open-source LLMs, we use an api to access the response of the LLM for the questions. For Example, for BoolQ, to get the answer response from GPT-3.5-turbo, DeepSeek-V2, and Qwen-1.5-32B-Chat using our SR-FoT, run this command:
+For no matter closed-source and open-source LLMs, we use an api to access the response of the LLM for the questions. For Example, for ScienceQA, to get the answer response from GPT-3.5-turbo, DeepSeek-V2, and Qwen-1.5-32B-Chat using our SR-FoT, run this command:
 
 ```
 cd answer_generate
-python Syllogism_BoolQ.py
-python Syllogism_BoolQ_deepseek.py
-python Syllogism_BoolQ_qwen.py
+python Syllogism_scienceQA.py
+python Syllogism_scienceQA_deepseek.py
+python Syllogism_scienceQA_qwen.py
 ```
-For BoolQ, to get the answer response from GPT-3.5-turbo, DeepSeek-V2, and Qwen-1.5-32B-Chat using base(without CoT prompt) or CoT, run this command:
+For ScienceQA, to get the answer response from GPT-3.5-turbo, DeepSeek-V2, and Qwen-1.5-32B-Chat using base(without CoT prompt) or CoT, run this command:
 ```
 cd answer_generate
-python base_cot_BoolQ.py
-python base_cot_BoolQ_deepseek.py
-python base_cot_BoolQ_qwen.py
+python base_cot_scienceQA.py
+python base_cot_scienceQA_deepseek.py
+python base_cot_scienceQA_qwen.py
 ```
 Other datasets can be processed similarly by running the Python files with the corresponding file names. The prompts used for base, CoT, and our SR-FoT methods can be found in the corresponding files under ./prompt directory.
 
 ### Calculate Accuracy
-
-
+After getting the answer, run the commands below to calculate the accuracy (for example: ScienceQA):
+```
+cd cal_acc
+python cal_acc_scienceQA_syllogism.py
+```
 
 ## Citation
 
