@@ -1,5 +1,5 @@
 # SR-FoT
-This is the official implementation of the paper "SR-FoT: A Syllogistic-Reasoning Framework of Thought for Large Language Models Tackling Knowledge-based Reasoning Tasks".
+This is the official implementation of the paper "SR-FoT: A Syllogistic-Reasoning Framework of Thought for Large Language Models Tackling Knowledge-based Reasoning Tasks" (AAAI 2025). 
 
 ## Requirements
 
